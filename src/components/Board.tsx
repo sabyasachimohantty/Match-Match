@@ -6,16 +6,6 @@ const Board = ({shuffledCards, setMoves, moves, setIsOver}: {
   moves: number,
   setIsOver: Dispatch<SetStateAction<boolean>>
 }) => {
-
-    // function delay(ms: number): Promise<void> {
-    //   return new Promise(resolve => setTimeout(resolve, ms));
-    // }
-    
-    // async function delayedFunction() {
-    //   console.log("Waiting...");
-    //   await delay(2000); // Wait for 2 seconds
-    //   console.log("Done waiting!");
-    // }
     
     const audio = new Audio('pen-click-99025.mp3')
     const [selectedCard1, setSelectedCard1] = useState<number>(-1)

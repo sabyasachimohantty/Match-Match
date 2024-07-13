@@ -18,6 +18,8 @@ function App() {
     return array;
   }
 
+  const colors = ["bg-blue-900", "bg-red-900", "bg-green-900", "bg-teal-900", "bg-purple-900", "bg-pink-900", "bg-yellow-900", "bg-lime-900"]
+
   const audio = new Audio('select-sound-121244.mp3')
   const cards = ["blue", "blue", "green", "green", "red", "red", "teal", "teal", "purple", "purple", "lime", "lime", "pink", "pink", "yellow", "yellow"]
   const [shuffledCards, setShuffledCards] = useState(shuffleArray(cards))
